@@ -95,6 +95,13 @@ const InputField = styled.input`
     width: 100%; /* Adjust input width for mobile */
   }
 `;
+const ForgotPasswordLink = styled.a`
+  position: relative;
+  right: -70%;
+  font-size: 14px;
+  color: #F78719;
+  text-decoration: none;
+`;
 
 const CheckboxLabel = styled.label`
   display: inline;
@@ -190,6 +197,7 @@ function Login() {
                 onClick={togglePasswordVisibility}
               />
             </PasswordToggle>
+            <ForgotPasswordLink href="#">Change Password</ForgotPasswordLink>
           </SpacedDiv>
           <SpacedDiv>
             <input type="checkbox" id="rememberMe" />
